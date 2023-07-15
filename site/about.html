@@ -6,15 +6,11 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- TODO: Update about/team pages, possibly make their content. Make the nav bar not as sucky (add lines between
-  tabs, make the color not as ugly). Could also use the Bootstrap navbars.
-  Make the submit image portion better, although this relates to page content. -->
-
 <!-- mobile formatting, etc -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    <title>Pixelizer</title>
+    <title>About the Project</title>
     <!-- if someone wants to, they could make this logo circular and/or transparent, probably looks better -->
     <link rel="icon" class="rounded-circle" href="https://trello.com/1/cards/64b1933d3ff2014a00a6c681/attachments/64b1c53a01a31ec7db40f171/download/level.png">
 <style type="text/css">
@@ -46,6 +42,10 @@ body {
   width: 80px;
   height: 80px;
 }
+
+/*
+Navbar template from w3schools.com
+*/
 
 /*
 Navbar template from w3schools.com
@@ -83,7 +83,6 @@ Navbar template from w3schools.com
   margin-right:100px;
 }
 
-/* Change color on hover */
 .navbar a:hover {
   font-weight:bold;
   color: aliceblue;
@@ -95,10 +94,6 @@ Navbar template from w3schools.com
   text-decoration:underline;
 }
 
-
-.submitimage{
-  text-align:center;
-}
 .placeholdertext{
   font-size:24px;
   text-align:center;
@@ -132,42 +127,23 @@ footer a:hover{
 <body>
 
 <div class="navbar">
-  <a href="index.html" class="left"id="active">Home</a>
-  <a href="about.html">About</a>
+  <a href="index.html" class="left">Home</a>
+  <a href="about.html" id="active">About</a>
   <a href="team.html"class="right">Team</a>
 </div>
 
-<div class="submitimage">
-<h1>Submit Image<h1>
-
-<form action="/action_page.php">
-  <label style="font-size:30px" for="imageurl">Input URL:</label>
-  <input type="text" id="imageurl" name="imageurl">
-  <input class="btn btn-primary"type="submit" value="Submit" onclick="displayInput()">
-  <!-- 
-    <button type="button" value="Submit" onclick="displayInput()"class="btn btn-primary"><strong>Submit</strong></button>
-    -->
-
-</form>
-
-<script>
-  function displayInput() {
-    let input = document.getElementById('imageurl').value;
-    let output = document.getElementById('output');
-    output.innerHTML = input;
-    document.write( displayInput() );
-  }
-</script>
 
 </div>
 
 <div class="placeholdertext">
-<p>Placeholder Text</p>
-<p>Placeholder Text</p>
-<p>Placeholder Text</p>
-<p>Placeholder Text</p>
-<p>Placeholder Text</p>
-<p>Placeholder Text</p>
+<p>This is where we will discuss the project's mission, methodology, development, etc.</p>
+<p>This is where we will discuss the project's mission, methodology, development, etc.</p>
+<p>This is where we will discuss the project's mission, methodology, development, etc.</p>
+<p>This is where we will discuss the project's mission, methodology, development, etc.</p>
+<p>This is where we will discuss the project's mission, methodology, development, etc.</p>
+<p>This is where we will discuss the project's mission, methodology, development, etc.</p>
+
+
 </div>
 
 </body>
