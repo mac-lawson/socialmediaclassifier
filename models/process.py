@@ -1,19 +1,33 @@
-from transformers import ViTImageProcessor, ViTForImageClassification, pipeline
+# Pixelizer - Image Classification with Vision Transformer (ViT)
+# Author: Mac Lawson
 
-green = '\033[92m'
-end = '\033[0m'
+from transformers import pipeline
+
 
 class Process:
     def __init__(self, keywords):
+        """
+        Initializes an instance of the Process class.
+
+        Args:
+            keywords (str): The keywords used for judging.
+
+        Returns:
+            None
+        """
         self.keywords = keywords
 
     def judge(self):
-        unmasker = pipeline('fill-mask', model='distilbert-base-uncased')
-        judgements = unmasker(self.keywords + " are a [MASK] thing .")
-        index = 0
-        final_judgement = ""
-        for judgement in judgements:
-            if index == 0:
+        sentiment_pipeline = pipeline(model="finiteautomata/bertweet-base-sentiment-analysis")
+        return sentiment_pipeline("The post contains "+self.keywords)
 
-                return float(judgement['score']), judgement['token_str']
-            index +=1
+    def sentiment(self, judgement: str):
+        if 'NEU' in judgement:
+            return 'safe'
+        if 'POS' in judgement:
+            return 'safe'
+        if 'NEG' in judgement:
+            return 'unsafe'
+
+# x = Process("quilt, comforter, comfort, puff")
+# x.judge()
