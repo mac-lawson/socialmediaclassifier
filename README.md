@@ -25,6 +25,12 @@ Classify an image URL
     judge = (postprocess.judge())
     final = postprocess.sentiment(str(judge))
 ```
+### Run `pixelizer.py`
+**Ensure that you have installed requirements.txt**
+```
+python3 pixelizer.py <image url>
+```
+
 
 
 
