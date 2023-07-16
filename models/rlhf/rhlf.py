@@ -10,16 +10,17 @@ app = Flask(__name__)
 
 @app.route('/', methods = ["GET", "POST"])
 def rhlf():
-    randomnum = str(randint(1, 100000))
-    testurl = ("https://loremflickr.com/320/240/world?lock="+randomnum)
-    jsonurl = ("https://loremflickr.com/json/g/320/240/world?lock="+randomnum)
-    dataset.append(jsonurl)
     if request.method == "POST":
        # getting input
        human_identify = request.form.get("text")
        print(human_identify)
        dataset.append(human_identify)
        print(dataset)
+    randomnum = str(randint(1, 100000))
+    testurl = ("https://loremflickr.com/320/240/world?lock="+randomnum)
+    jsonurl = ("https://loremflickr.com/json/g/320/240/world?lock="+randomnum)
+    dataset.append(jsonurl)
+
 
     return render_template('rlhf.html', imgurl = testurl)
 
