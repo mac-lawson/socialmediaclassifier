@@ -42,3 +42,4 @@ class Process:
             return 'Content is safe'
         if 'NEG' in judgement:
             return 'Content is unsafe'
+    

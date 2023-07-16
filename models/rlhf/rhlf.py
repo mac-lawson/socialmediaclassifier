@@ -2,6 +2,7 @@ from random import randint
 from flask import render_template, abort, url_for, Flask, request
 import csv
 import sys
+from requests import get
 
 
 dataset = []
@@ -18,8 +19,9 @@ def rhlf():
        print(dataset)
     randomnum = str(randint(1, 100000))
     testurl = ("https://loremflickr.com/320/240/world?lock="+randomnum)
-    jsonurl = ("https://loremflickr.com/json/g/320/240/world?lock="+randomnum)
-    dataset.append(jsonurl)
+    jsonurl = get("https://loremflickr.com/json/g/320/240/world?lock="+randomnum)
+    
+    dataset.append(jsonurl.text)
 
 
     return render_template('rlhf.html', imgurl = testurl)

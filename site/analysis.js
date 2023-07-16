@@ -11,5 +11,6 @@ async function sentiment(data) {
 	return result;
 }
 
-
-
+sentiment({"inputs": "I like you. I love you"}).then((response) => {
+	console.log(JSON.stringify(response));
+});
