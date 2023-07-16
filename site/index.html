@@ -28,7 +28,7 @@ body {
 .header {
   padding: 20px;
   text-align: center;
-  background: #87bdd8;
+  background: dodgerblue;
   color: white;
   font-size: 30px;
   border: 1.5px solid black;
@@ -56,8 +56,7 @@ Navbar template from w3schools.com
   /*
   Change this color it's pretty ugly
   */
-  background-color: #515668;
-  position: sticky;
+  background-color:lightskyblue;
   /*position: -webkit-sticky;*/
   top: 0;
   border-bottom:1.5px solid black;
@@ -67,7 +66,6 @@ Navbar template from w3schools.com
 .navbar a {
   float: left;
   display: block;
-  color: white;
   font-size:16px;
   color: black;
   font-weight:bold;
@@ -104,7 +102,7 @@ Navbar template from w3schools.com
   text-align:center;
 }
 footer {
-  background-color:#87bdd8;
+  background: dodgerblue;
   text-align:center;
   padding: 5px;
   font-size:16px;
@@ -140,8 +138,9 @@ footer a:hover{
 <div class="submitimage">
 <h1>Submit Image<h1>
 
+<button type="button" class="btn btn-secondary">Load Model</button>
 <form action="/action_page.php">
-  <label style="font-size:30px" for="imageurl">Input URL:</label>
+  <label style="font-size:50px" for="imageurl">Input URL:</label>
   <input type="text" id="imageurl" name="imageurl">
   <input class="btn btn-primary"type="submit" value="Submit" onclick="displayInput()">
   <!-- 
@@ -175,6 +174,8 @@ footer a:hover{
 <footer>
         <h2 style="font-size:22px"><strong>Credits & Info</strong></h2>
         <a href="https://github.com/mac-lawson/socialmediaclassifier">Project GitHub</a>
+        <br>
+        <a href="https://pixelizerrlhf.vercel.app/">Model Training</a>
         <br>
         <a href="https://docs.google.com/document/d/1T9WNyAI0T-F-hKCSeGOxWFGnPHrhcD8qe9WPXGm_jBE/edit#heading=h.r51uudyvy3iz">Proposal</a>
         <p id="credit">By Lucas Hsia, Mac Lawson, Sebastian Liu, & Donovan Samms</p>
