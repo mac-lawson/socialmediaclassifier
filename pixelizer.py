@@ -7,6 +7,7 @@ if len(sys.argv) <= 1:
     quit()
 else:
     classifier = classify(str(sys.argv[1]))
+    print(classifier)
     postprocess = Process(classifier)
     judge = (postprocess.judge())
     final = postprocess.sentiment(str(judge))

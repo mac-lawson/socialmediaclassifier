@@ -3,7 +3,6 @@
 
 from transformers import pipeline
 
-
 class Process:
     def __init__(self, keywords):
         """
@@ -18,16 +17,28 @@ class Process:
         self.keywords = keywords
 
     def judge(self):
+        """
+        Uses a sentiment analysis model to judge the content based on the keywords.
+
+        Returns:
+            str: The sentiment judgment of the content.
+        """
         sentiment_pipeline = pipeline(model="finiteautomata/bertweet-base-sentiment-analysis")
-        return sentiment_pipeline("The post contains "+self.keywords)
+        return sentiment_pipeline("The post contains " + self.keywords)
 
     def sentiment(self, judgement: str):
-        if 'NEU' in judgement:
-            return 'safe'
-        if 'POS' in judgement:
-            return 'safe'
-        if 'NEG' in judgement:
-            return 'unsafe'
+        """
+        Translates the sentiment judgment into a human-readable format.
 
-# x = Process("quilt, comforter, comfort, puff")
-# x.judge()
+        Args:
+            judgement (str): The sentiment judgment.
+
+        Returns:
+            str: The translated sentiment judgment.
+        """
+        if 'NEU' in judgement:
+            return 'Content is safe, but might need to be age filtered.'
+        if 'POS' in judgement:
+            return 'Content is safe'
+        if 'NEG' in judgement:
+            return 'Content is unsafe'
