@@ -4,3 +4,4 @@ torchvision
 Pillow
 requests
 xformers
+flask
