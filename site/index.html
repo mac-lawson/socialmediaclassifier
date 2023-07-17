@@ -97,6 +97,10 @@ Navbar template from w3schools.com
 .submitimage{
   text-align:center;
 }
+.form-control{
+  margin:auto;
+  width:70%;
+}
 .placeholdertext{
   font-size:24px;
   text-align:center;
@@ -137,15 +141,22 @@ footer a:hover{
 
 <div class="submitimage">
 <h1>Submit Image<h1>
-
+<p style="font-size:18px;font-weight:normal;" id="loadmodeldesc">If the model is slow, try pressing the <strong>Load Model</strong> button below to refresh the server.</p>
 <button type="button" class="btn btn-secondary">Load Model</button>
+
 <form action="/action_page.php">
-  <label style="font-size:50px" for="imageurl">Input URL:</label>
-  <input type="text" id="imageurl" name="imageurl">
+  <div class="mb-3 mt-3">
+    <input type="url" class="form-control" id="urlinput" placeholder="Enter image URL (e.g https://picsum.photos/id/237/200/300)" name="urlinput">
+  </div>
+  <input class="btn btn-primary"type="submit" value="Submit Image" onclick="displayInput()">
+
+ 
+  <!--
+  <label style="font-size:30px" for="imageurl">Input URL:</label>
+  <input type="text" id="imageurl" name="imageurl" style="font-size:30px;">
   <input class="btn btn-primary"type="submit" value="Submit" onclick="displayInput()">
-  <!-- 
-    <button type="button" value="Submit" onclick="displayInput()"class="btn btn-primary"><strong>Submit</strong></button>
-    -->
+  -->
+
 
 </form>
 
