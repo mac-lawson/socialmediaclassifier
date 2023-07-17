@@ -1,5 +1,7 @@
 ![logo](https://trello.com/1/cards/64b1933d3ff2014a00a6c681/attachments/64b1c53a01a31ec7db40f171/download/level.png)
 # Pixelizer
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+
 Project for [Coding@Tufts](https://universitycollege.tufts.edu/high-school/programs/coding-academy)
 
 Pixelizer is a combination of two machine learning pipelines designed to identify dangerous and/or inappropriate text/image posts on social media.
