@@ -16,7 +16,7 @@ class Process:
         """
         self.keywords = keywords
 
-    def judge(self):
+    def judge(self) -> str:
         """
         Uses a sentiment analysis model to judge the content based on the keywords.
 
@@ -25,10 +25,13 @@ class Process:
         """
         sentiment_pipeline = pipeline(model="finiteautomata/bertweet-base-sentiment-analysis")
 
-        return sentiment_pipeline("There is a post that contains a " + self.keywords)
+        return str(sentiment_pipeline("There is a post that contains a " + self.keywords))
 
     def sentiment(self, judgement: str):
         """
+        Name: 
+
+        Purpose:
         Translates the sentiment judgment into a human-readable format.
 
         Args:
@@ -36,6 +39,10 @@ class Process:
 
         Returns:
             str: The translated sentiment judgment.
+
+        Notes:
+
+
         """
         if 'NEU' in judgement:
             return 'Content is safe'

@@ -47,3 +47,5 @@ python3 pixelizer.py <image url>
 
 
 
+
+**Add example process**
