@@ -24,7 +24,8 @@ class Process:
             str: The sentiment judgment of the content.
         """
         sentiment_pipeline = pipeline(model="finiteautomata/bertweet-base-sentiment-analysis")
-        return sentiment_pipeline("The post contains " + self.keywords)
+
+        return sentiment_pipeline("There is a post that contains a " + self.keywords)
 
     def sentiment(self, judgement: str):
         """
@@ -37,9 +38,8 @@ class Process:
             str: The translated sentiment judgment.
         """
         if 'NEU' in judgement:
-            return 'Content is safe, but might need to be age filtered.'
+            return 'Content is safe'
         if 'POS' in judgement:
             return 'Content is safe'
         if 'NEG' in judgement:
             return 'Content is unsafe'
-    
