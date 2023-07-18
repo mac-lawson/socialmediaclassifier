@@ -45,6 +45,3 @@ class Pixelizer:
         print(judgement)
         return(processor.sentiment(str(judgement)))
 
-pixelpixel = Pixelizer()
-
-print(pixelpixel.classify_image_only("https://www.parentingforbrain.com/wp-content/uploads/important-happy-family-walk-on-the-beach-water-1024x683.jpeg.webp"))

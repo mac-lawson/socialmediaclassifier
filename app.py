@@ -17,5 +17,10 @@ def home():
         
     return render_template("site/index.html", classifier="", judgement="")
 
+def team():
+    return render_template("site/team.html")
+def about():
+    return render_template("site/about.html")
+
 if __name__ == "__main__":
     app.run()
