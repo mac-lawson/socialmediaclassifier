@@ -16,9 +16,10 @@ def home():
         return render_template("site/index.html", classifier=str(content), judgement=str(processor.sentiment(str(processor.judge()))))
         
     return render_template("site/index.html", classifier="", judgement="")
-
+@app.route("/team")
 def team():
     return render_template("site/team.html")
+@app.route("/about")
 def about():
     return render_template("site/about.html")
 

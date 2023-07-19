@@ -44,8 +44,13 @@ Classify an image URL
 python3 pixelizer.py <image url>
 ```
 
+### 3. Run web server
+**Ensure that you have installed requirements.txt**
+```bash
+python3 app.py
+```
 
 
 
 
-**Add example process**
+
