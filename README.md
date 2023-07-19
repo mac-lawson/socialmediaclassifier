@@ -20,6 +20,8 @@ git clone https://github.com/mac-lawson/socialmediaclassifier
 ```bash
 pip install -r requirements.txt
 ```
+## Information and Limitations
+- Currently, only .jpg image files are accepted
 
 ## Options to run
 ### 1. Integrate into your own app (better if you want to use for production)

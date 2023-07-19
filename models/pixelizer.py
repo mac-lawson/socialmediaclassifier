@@ -1,3 +1,6 @@
+# Pixelizer - Image Classification with Vision Transformer (ViT)
+# Author: Mac Lawson
+
 from classify import classify
 from process import Process
 
