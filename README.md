@@ -51,7 +51,12 @@ python3 pixelizer.py <image url>
 ```bash
 python3 app.py
 ```
-
+### List of testing images:
+If you want to do some testing on the platform, here are some image you can try and run:
+- https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg
+- https://www.dice.com/binaries/medium/content/gallery/dice/insights/2020/03/shutterstock_1375882658-e1583354582236.jpg
+- https://www.piercemfg.com/hubfs/electric-fire-truck/electric-fire-truck-reference-guide-Banner.jpg
+- https://raisingchildren.net.au/__data/assets/image/0024/47742/baby-behaviour-and-awareness.jpg
 
 
 
