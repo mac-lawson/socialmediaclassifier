@@ -51,6 +51,9 @@ python3 pixelizer.py <image url>
 ```bash
 python3 app.py
 ```
+
+### 4. Colab notebook
+[Google Colab](https://colab.research.google.com/drive/1U1pC4Pniv_Xr6ycC-ObIPrAsec4L0Yk-?usp=sharing)
 ### List of testing images:
 If you want to do some testing on the platform, here are some image you can try and run:
 - https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg
