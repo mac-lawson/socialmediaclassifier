@@ -71,6 +71,7 @@ If you want to do some testing on the platform, here are some image you can try 
 - #3 Be able to upload an image along with the URL downstream.
 - #4 Improve the URL downstream, long URLs and PNGs/.webp files tend to cause issues
 - #5 Add caching for RLHF
+- #6 javascript backend that does the same as what the Pixelizer python class does. Just port pixelizer.py over to JS
 #### Graphics
 - #1 Create some cool graphics for a new home page [like this](https://dribbble.com/shots/11300497-Introducing-Storytale-Platform)
 
