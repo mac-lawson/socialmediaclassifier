@@ -3,6 +3,8 @@
 
 from classify import classify
 from process import Process
+import warnings
+import functools
 
 class Pixelizer:
     def __init__(self, mode="production"):

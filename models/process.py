@@ -2,7 +2,10 @@
 # Author: Mac Lawson
 
 from transformers import pipeline
+import warnings
+import functools
 
+@deprecated
 class Process:
     def __init__(self, keywords):
         """

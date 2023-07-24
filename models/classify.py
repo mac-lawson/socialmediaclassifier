@@ -4,6 +4,8 @@
 from transformers import ViTImageProcessor, ViTForImageClassification, pipeline
 from PIL import Image
 from requests import get
+import warnings
+import functools
 
 
 def classify(url: str):

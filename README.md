@@ -78,6 +78,7 @@ If you want to do some testing on the platform, here are some image you can try 
 **If you want to begin adding some features, put your name here to avoid multiple people working on the same issue!**
 
 Back end #1 - Mac
+
 Back end #2 - Mac
 
 I can start looking at front end 1/2 when I'm free, but no promises. - Sebastian
