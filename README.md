@@ -61,6 +61,22 @@ If you want to do some testing on the platform, here are some image you can try 
 - https://www.piercemfg.com/hubfs/electric-fire-truck/electric-fire-truck-reference-guide-Banner.jpg
 - https://raisingchildren.net.au/__data/assets/image/0024/47742/baby-behaviour-and-awareness.jpg
 
+### New features that would be nice to add:
+#### Front end:
+- #1 [Migrate the front end to React](https://towardsdatascience.com/build-deploy-a-react-flask-app-47a89a5d17d9)
+- #2 Improve the web demo to display the image and other images similar too it
+#### Back end:
+- #1 Upgrade the image classification module
+- #2 Add in a module that only uses the Hugging Face API to be able to run server publicly
+- #3 Be able to upload an image along with the URL downstream.
+- #4 Improve the URL downstream, long URLs and PNGs/.webp files tend to cause issues
+- #5 Add caching for RLHF
+#### Graphics
+- #1 Create some cool graphics for a new home page [like this](https://dribbble.com/shots/11300497-Introducing-Storytale-Platform)
 
+**If you want to begin adding some features, put your name here to avoid multiple people working on the same issue!**
+
+Back end #1 - Mac
+Back end #2 - Mac
 
 
